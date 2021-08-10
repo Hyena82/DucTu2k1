@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="head-form">
+                <div class="animate-text__typing">
+                    <p>Phần Mềm Quản Lý <span class="typed-text"></span> <span class="cursor">&nbsp;</span></p>
+                </div>
+
+                <div class="animated-text">
+                    <div class="line">Faster</div>
+                    <div class="line">Safer</div>
+                    <div class="line">Cheaper</div>
+                    <div class="line">And Secretly...</div>
+                </div>
+            </div>
+            <div class="data__result">
+            </div>
+            <div class="controller">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="input name value to add">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" placeholder="input address value to add">
+                <div class="addBtn Btn">ADD</div>
+                <div class="editBtn Btn">EDIT</div>
+                <div class="cancelBtn Btn active">CANCEL</div>
+            </div>
+        </div>
+    </div>
+    <div class="modal__overlay">
+        <div class="load"></div>
+    </div>
+
+    <script>
+        window.addEventListener("load", function () {
+            var load = document.querySelector('.modal__overlay');
+            load.style.display = 'none';
+        })
+    </script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
