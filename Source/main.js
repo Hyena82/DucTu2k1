@@ -23,7 +23,6 @@ function getData(callback) {
         .then((respond) => respond.json())
         .then(callback)
 }
-
 function renderData(result) {
     html = result.map((value) => {
         return `
@@ -47,7 +46,7 @@ function renderData(result) {
 }
 
 getData(renderData)
-//------POST-----
+//------POST----
 
 function createData(data) {
     let options = {
@@ -300,3 +299,4 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(type, newTextDelay + 250)
 })
+c('nothing')
